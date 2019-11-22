@@ -1,22 +1,135 @@
+Html {box-sizing:border-box;}
+*, *::before, *::after {box-sizing:inherit}
+
 .App {
   text-align: center;
+  color: white;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
+a{
+  color: white;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
+a:hover{
+  color: blue;
+}
+
+/* HEADER */
+.header{
+  display: flex;
+  justify-content: space-between;
+  position:fixed;
+  padding: 5px;
+  width:100%;
+  font-size: 23px;
+  /* text-transform: uppercase; */
+  /* background-color: rgba(0, 0, 0, 0.5) */
+}
+
+.LeftSide{
+  display: flex;
+  margin: 0px 10px;
+}
+
+.RightSide{
+  display: flex;
+}
+
+.rightSingle{
+  margin: 0px 10px 0px 20px;
+}
+/* MAIN */
+
+/* HOME */
+#Home {
+  background-color: #313131;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(15px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.JobTitle{
+  font-size: 17px;
+}
+
+.icons{
+  font-size: 25px;
+  display: flex;
+}
+
+.icon{
+  margin: 0px 5px;
+}
+
+/* About */
+#About {
+  background-color: #1b1b1b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: white;
+}
+
+/* Skills */
+#Skills{
+  background-image: url('./assets/DSC09805.jpg');
+  background-size: cover;
+  background-position-y: -50px;  
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: white;
+}
+.Skill{
+  display: flex;
+}
+
+.SkillSet1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 230px;
+  border-right: 3px solid white;
+}
+
+.Code{
+  display: flex;
+}
+
+
+.SkillSet2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 230px;
+}
+
+.design{
+  display: flex;
+}
+
+.classLeft{
+  width: 250px;
+}
+
+.skillRight{
+  width: 250px;
+}
+
+.title{
+  margin-bottom: 30px;
 }
