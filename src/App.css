@@ -5,6 +5,8 @@ Html {box-sizing:border-box;}
   text-align: center;
   color: white;
   position: relative;
+  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 a{
@@ -13,7 +15,14 @@ a{
 }
 
 a:hover{
-  color: blue;
+  color: lightgray;
+  border-bottom: 2px solid lightgray;
+}
+
+.Section-T{
+  font-size: 35px;
+  margin-bottom: 40px;
+  /* margin-left: -200px; */
 }
 
 /* HEADER */
@@ -23,6 +32,7 @@ a:hover{
   position:fixed;
   padding: 5px;
   width:100%;
+  height: auto;
   font-size: 23px;
   /* text-transform: uppercase; */
   /* background-color: rgba(0, 0, 0, 0.5) */
@@ -44,14 +54,23 @@ a:hover{
 
 /* HOME */
 #Home {
-  background-color: #313131;
+  /* background-color: #313131; */
+  background-image: url('./assets/DSC09782.jpg');
   min-height: 100vh;
+  background-size: cover;
+  /* background-position-y: -50px; */
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(15px + 2vmin);
+  font-size: 25px;
   color: white;
+}
+
+.LOGO{
+  height: 55vh;
+  margin: 10px 0px;
 }
 
 .JobTitle{
@@ -59,7 +78,7 @@ a:hover{
 }
 
 .icons{
-  font-size: 25px;
+  font-size: 30px;
   display: flex;
 }
 
@@ -72,17 +91,32 @@ a:hover{
   background-color: #1b1b1b;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(15px + 2vmin);
   color: white;
 }
 
+.quickDes{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Line{
+  width: 100px;
+  height: 10px;
+  border-bottom: 2px solid white;
+}
+
+.largeDes{
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Skills */
 #Skills{
   background-image: url('./assets/DSC09805.jpg');
   background-size: cover;
-  background-position-y: -50px;  
+  /* background-position-y: -50px; */
   min-height: 100vh;
   background-repeat: no-repeat;
   display: flex;
@@ -101,21 +135,24 @@ a:hover{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 230px;
-  border-right: 3px solid white;
+  height: 270px;
+  padding: 0px 20px;
+  border-right: 2px solid white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .Code{
-  display: flex;
+  display: flex ;
 }
-
 
 .SkillSet2{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 230px;
+  height: 270px;
+  padding: 0px 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .design{
@@ -123,13 +160,54 @@ a:hover{
 }
 
 .classLeft{
-  width: 250px;
+  width: 260px;
 }
 
 .skillRight{
-  width: 250px;
+  width: 260px;
 }
 
 .title{
   margin-bottom: 30px;
+}
+/* Projects */
+#Projects {
+  background-color: #313131;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: white;
+}
+
+/* Contact */
+#Contact {
+  background-color: #1b1b1b;
+  height: 150px;
+  font-size: 35px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoSec{
+  display: flex;
+  flex-direction: row;
+  font-size: 23px;
+}
+
+.information{
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
 }

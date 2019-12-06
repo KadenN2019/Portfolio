@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-// import "font-awesome/css/font-awesome.min.css"
+import logo from './assets/NeumanKlogo.png'
+import "font-awesome/css/font-awesome.min.css"
 
 function App() {
   return (
     <div className="App">
+{/* HEADER */}
       <header className="App-header">
         <div className="header">
           <div className="LeftSide">
-          <a href="#">Kaden Neuman</a>
+            <a href="#">Kaden Neuman</a>
           </div>
           <div className="RightSide">
             <div className="rightSingle">
@@ -39,38 +41,45 @@ function App() {
           </div>
         </div>
       </header>
+{/* MAIN PAGE */}
       <main>
-
         <div id="Home">
-          <div className="LOGO">
-            <img src={'/ICON-01.png)'}/>
-          </div>
+          <img  className="LOGO" src={logo}/>
           <div className="JobTitle">
-            Front End Developer
+            Front End Developer 
           </div>
           <div className="icons">
             <div className="icon">
-              {/* <i class=" fa fa-github"></i> */}
-              github
+              <a href="#">
+                <i class="fa fa-linkedin"></i>
+              </a>
             </div>
             <div className="icon">
-              LinkedIn
+              <a href="https://github.com/KadenN2019" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
-
+{/* ABOUT ME */}
         <div id="About">
-          <div>
+          <div className="Section-T">
             About.
           </div>
+          <div className="quickDes">
+            Hello this is me and I like Javascript.
+          </div>
+          <div className="Line"></div>
+          {/* <img></img> */}
+          <div className="largeDes">
+            Hi this is my bigger Paragraph about how I like Javascript.
+          </div>
         </div>
-
+{/* SKILLS */}
         <div id="Skills">
-
-          <div>
+          <div className="Section-T">
             Skills.
           </div>
-
           <div className="Skill">
             <div className="SkillSet1">
               <div className="title">
@@ -120,21 +129,21 @@ function App() {
               <div className="design">
                 <div className="classLeft">
                   <div>
-                    Adobe Illustrator
+                    Illustrator
                   </div>
                   <div>
-                    Adobe Premiere Pro
+                    Premiere Pro
                   </div>
                   <div>
-                    Adobe XD 
+                    XD 
                   </div>
                 </div>
                 <div className="skillRight">
                   <div>
-                    Adobe Photoshop
+                    Photoshop
                   </div>
                   <div>
-                    Adobe Lightroom
+                    Lightroom
                   </div>
                   <div>
                     Unreal Engine 4
@@ -145,13 +154,41 @@ function App() {
           </div>
 
         </div>
-
+{/* Projects */}
         <div id="Projects">
           Projects.
         </div>
-
+{/* CONTACT INFORMATION */}
         <div id="Contact">
-          Contact.
+          <div>
+            <div>
+            Contact.
+            </div>
+            <div className="info">
+              <div className="infoSec">
+                <div className="information">
+                  <a href="mailto:kadenn2019@gmail.com">
+                    KadenN2019@gmail.com
+                  </a>
+                </div>
+                <div className="information">
+                  (702)499-2569
+                </div>
+              </div>
+              <div className="infoSec">
+                <div className="information">
+                  <a className="icons">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </div>
+                <div className="information">
+                  <a href="https://github.com/KadenN2019" target="_blank" className="icons">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </main>
