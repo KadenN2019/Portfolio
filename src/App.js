@@ -50,7 +50,7 @@ function App() {
           </div>
           <div className="icons">
             <div className="icon">
-              <a href="#">
+              <a href="#"  target="_blank">
                 <i class="fa fa-linkedin"></i>
               </a>
             </div>
@@ -157,6 +157,19 @@ function App() {
 {/* Projects */}
         <div id="Projects">
           Projects.
+          <div>
+            <div>
+              <img />
+              <div>
+                <div>
+                  Mint Shoes
+                </div>
+                <div>
+                  Mint shoes is an ecommerce website that is designed to be 
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 {/* CONTACT INFORMATION */}
         <div id="Contact">
@@ -177,7 +190,7 @@ function App() {
               </div>
               <div className="infoSec">
                 <div className="information">
-                  <a className="icons">
+                  <a href="#"  target="_blank" className="icons">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </div>
