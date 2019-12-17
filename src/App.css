@@ -1,4 +1,4 @@
-Html {box-sizing:border-box;}
+Html {box-sizing:border-box;   scroll-behavior: smooth;}
 *, *::before, *::after {box-sizing:inherit}
 
 .App {
@@ -12,6 +12,8 @@ Html {box-sizing:border-box;}
 a{
   color: white;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 500ms, border 500ms;
 }
 
 a:hover{
@@ -34,6 +36,7 @@ a:hover{
   width:100%;
   height: auto;
   font-size: 23px;
+  transition: background-color 300ms, font-size 300ms;
   /* text-transform: uppercase; */
   /* background-color: rgba(0, 0, 0, 0.5) */
 }
@@ -50,6 +53,12 @@ a:hover{
 .rightSingle{
   margin: 0px 10px 0px 20px;
 }
+
+.BlackSize{
+  background-color: rgba(0, 0, 0, .7);
+  font-size: 20px;
+}
+
 /* MAIN */
 
 /* HOME */
@@ -89,6 +98,7 @@ a:hover{
 /* About */
 #About {
   background-color: #1b1b1b;
+  /* background-color: #000; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -96,25 +106,51 @@ a:hover{
   justify-content: center;
   font-size: calc(15px + 2vmin);
   color: white;
+  margin: auto;
+}
+
+.AboutSec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .quickDes{
   font-family: 'Montserrat', sans-serif;
+  text-align: start;
+  font-size: 23px;
 }
 
 .Line{
   width: 100px;
   height: 10px;
   border-bottom: 2px solid white;
+  margin: 8px 0px 9px;
 }
 
 .largeDes{
   font-family: 'Montserrat', sans-serif;
+  text-align: start;
+  font-size: 23px;
 }
+
+.AboutImg{
+  width: 40%;
+  border-radius: 50%;
+}
+
+.AboutLeft{
+  width:45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 
 /* Skills */
 #Skills{
-  background-image: url('./assets/DSC09805.jpg');
+  /* background-image: url('./assets/DSC09805.jpg'); */
+  background-image: url('./assets/DSC05824.jpg');
   background-size: cover;
   /* background-position-y: -50px; */
   min-height: 100vh;
@@ -143,6 +179,7 @@ a:hover{
 
 .Code{
   display: flex ;
+  font-size: 28px;
 }
 
 .SkillSet2{
@@ -157,6 +194,7 @@ a:hover{
 
 .design{
   display: flex;
+  font-size: 28px;
 }
 
 .classLeft{
@@ -169,6 +207,7 @@ a:hover{
 
 .title{
   margin-bottom: 30px;
+  font-size: 28px;
 }
 /* Projects */
 #Projects {
@@ -178,15 +217,46 @@ a:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(15px + 2vmin);
+  font-size: 33px;
   color: white;
+  padding: 15px 0px 15px;
+}
+
+.ProjectINDV{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+}
+
+.ProjTitle{
+  font-size: 28px;
+}
+
+.ProjIMG{
+  width: 40%;
+  box-shadow: 6px 6px 5px #111;
+  cursor: pointer;
+}
+
+.ProjDESC{
+  font-family: 'Montserrat', sans-serif;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projDetails{
+  font-size: 20px;
+  text-align: left;
 }
 
 /* Contact */
 #Contact {
   background-color: #1b1b1b;
   height: 150px;
-  font-size: 35px;
+  font-size: 33px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -210,4 +280,21 @@ a:hover{
 .information{
   margin: 10px;
   font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 1121px) {
+  .Skill{
+    flex-direction: column;
+  }
+  .SkillSet1{
+    border: none;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .ProjectINDV{
+    flex-direction: column;
+  }
 }

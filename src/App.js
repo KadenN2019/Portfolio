@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import logo from './assets/NeumanKlogo.png'
 import "font-awesome/css/font-awesome.min.css"
+import MintShoes from "./assets/MintShoes.jpg"
+import TheViewBar from "./assets/TheViewBar.jpg"
 
-function App() {
+function App(props) {
+
+  const [headerClass, setHeaderClass] = useState('')
+
+  function handleScroll(e) {
+    let scrollTop = window.pageYOffset
+
+    if (scrollTop >= 120) {
+      setHeaderClass('BlackSize')
+    } else {
+      setHeaderClass('')
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <div className="App">
 {/* HEADER */}
       <header className="App-header">
-        <div className="header">
+        <div className={"header " + headerClass}>
           <div className="LeftSide">
             <a href="#">Kaden Neuman</a>
           </div>
@@ -51,12 +70,12 @@ function App() {
           <div className="icons">
             <div className="icon">
               <a href="#"  target="_blank">
-                <i class="fa fa-linkedin"></i>
+                <i className="fa fa-linkedin"></i>
               </a>
             </div>
             <div className="icon">
               <a href="https://github.com/KadenN2019" target="_blank">
-                <i class="fa fa-github"></i>
+                <i className="fa fa-github"></i>
               </a>
             </div>
           </div>
@@ -66,13 +85,19 @@ function App() {
           <div className="Section-T">
             About.
           </div>
-          <div className="quickDes">
-            Hello this is me and I like Javascript.
-          </div>
-          <div className="Line"></div>
-          {/* <img></img> */}
-          <div className="largeDes">
-            Hi this is my bigger Paragraph about how I like Javascript.
+          <div className="AboutSec">
+            <div className="AboutLeft">
+              <div className="quickDes">
+                I am a frontend developer with experience in user interface and logo design.
+              </div>
+              <div className="Line"></div>
+              <div className="largeDes">
+              Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+              </div>
+            </div>
+          
+              <img className="AboutImg" src="https://firebasestorage.googleapis.com/v0/b/sports-site-dude.appspot.com/o/DevPics%2FIMG_0599.jpg?alt=media&token=6d2c61b4-6b72-4910-818c-2ab4f6397678"/>
+            
           </div>
         </div>
 {/* SKILLS */}
@@ -158,18 +183,45 @@ function App() {
         <div id="Projects">
           Projects.
           <div>
-            <div>
-              <img />
-              <div>
-                <div>
+            <div className="ProjectINDV">
+              <img src={MintShoes} className="ProjIMG" />
+
+              <div className="ProjDESC">
+                <div className="ProjTitle">
                   Mint Shoes
                 </div>
+                <div className="projDetails">
+                  Mint shoes is an ecommerce website that is designed to make finding what your favorite NBA player wears game to game. With this project I worked with a group of four and had a time frame of two weeks from start to finish, which required the team to divde and conquer on different parts of the project. I worked on the design of the project setting goals and objectives of each team member.  My primary role was the user interface, jsx, and css. Other team members worked on the database.
+                </div>
                 <div>
-                  Mint shoes is an ecommerce website that is designed to be 
+                  <a href="https://github.com/jkhone/sports-site-dude" target="_blank" className="icons">
+                    <i className="fa fa-github"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+
+          <div>
+            <div className="ProjectINDV">
+              <img src={TheViewBar} className="ProjIMG" />
+
+              <div className="ProjDESC">
+                <div  className="ProjTitle">
+                  The View Bar
+                </div>
+                <div className="projDetails">
+                  The View Bar is a mock Restaurant. The website demonstrates what can be achieved in native html and css with little javascript. The menu uses an API to show items with the appropriate icon for allergies and ingredients.  
+                </div>
+                <div>
+                  <a href="https://github.com/KadenN2019/TheViewBar" target="_blank" className="icons">
+                    <i className="fa fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 {/* CONTACT INFORMATION */}
         <div id="Contact">
@@ -191,12 +243,12 @@ function App() {
               <div className="infoSec">
                 <div className="information">
                   <a href="#"  target="_blank" className="icons">
-                    <i class="fa fa-linkedin"></i>
+                    <i className="fa fa-linkedin"></i>
                   </a>
                 </div>
                 <div className="information">
                   <a href="https://github.com/KadenN2019" target="_blank" className="icons">
-                    <i class="fa fa-github"></i>
+                    <i className="fa fa-github"></i>
                   </a>
                 </div>
               </div>
