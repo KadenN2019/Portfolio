@@ -88,11 +88,11 @@ function App(props) {
           <div className="AboutSec">
             <div className="AboutLeft">
               <div className="quickDes">
-                I am a frontend developer with experience in user interface and logo design.
+                I am a frontend developer with a desire to combine the world of design and code.
               </div>
               <div className="Line"></div>
               <div className="largeDes">
-              Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
               </div>
             </div>
           
@@ -113,7 +113,7 @@ function App(props) {
               <div className="Code">
                 <div className="classLeft">
                   <div>
-                    HTML 5
+                    HTML
                   </div>
                   <div>
                     Javascript
@@ -125,12 +125,12 @@ function App(props) {
                     Node.js
                   </div>
                   <div>
-                    SQL
+                    MySQL
                   </div>
                 </div>
                 <div className="skillRight">
                   <div>
-                    CSS 3
+                    CSS
                   </div>
                   <div>
                     JQuery
@@ -191,7 +191,24 @@ function App(props) {
                   Mint Shoes
                 </div>
                 <div className="projDetails">
-                  Mint shoes is an ecommerce website that is designed to make finding what your favorite NBA player wears game to game. With this project I worked with a group of four and had a time frame of two weeks from start to finish, which required the team to divde and conquer on different parts of the project. I worked on the design of the project setting goals and objectives of each team member.  My primary role was the user interface, jsx, and css. Other team members worked on the database.
+                  Mint shoes is an e-commerce website that is designed to make finding what your favorite NBA player wears game to game. With this project, I worked with a group of four and had a time frame of two weeks from start to finish, which required the team to divide and conquer on different parts of the project. I worked on the design of the project setting the goals and objectives of each team member. My primary role was the user interface, jsx, and CSS. Other team members worked on the database.
+                </div>
+                <div className="projCode">
+                  <div className="specCode">
+                    React
+                  </div>
+                  <div className="specCode">
+                    Redux
+                  </div>
+                  <div className="specCode">
+                    Javascript
+                  </div>
+                  <div className="specCode">
+                    CSS
+                  </div>
+                  <div className="specCode">
+                    MySQL
+                  </div>
                 </div>
                 <div>
                   <a href="https://github.com/jkhone/sports-site-dude" target="_blank" className="icons">
@@ -204,14 +221,29 @@ function App(props) {
 
           <div>
             <div className="ProjectINDV">
-              <img src={TheViewBar} className="ProjIMG" />
-
+              {/* <a  href="http://viewbar.surge.sh/"> */}
+                <img src={TheViewBar} className="ProjIMG" />
+              {/* </a> */}
               <div className="ProjDESC">
                 <div  className="ProjTitle">
                   The View Bar
                 </div>
                 <div className="projDetails">
-                  The View Bar is a mock Restaurant. The website demonstrates what can be achieved in native html and css with little javascript. The menu uses an API to show items with the appropriate icon for allergies and ingredients.  
+                  The View Bar is a mock Restaurant. The website demonstrates what can be achieved in native HTML and CSS with little javascript. The menu uses an API to show items with the appropriate icon for allergies and ingredients. 
+                </div>
+                <div className="projCode">
+                  <div className="specCode">
+                    HTML
+                  </div>
+                  <div className="specCode">
+                    CSS
+                  </div>
+                  <div className="specCode">
+                    Javascript
+                  </div>
+                  <div className="specCode">
+                    API
+                  </div>
                 </div>
                 <div>
                   <a href="https://github.com/KadenN2019/TheViewBar" target="_blank" className="icons">
@@ -230,7 +262,7 @@ function App(props) {
             Contact.
             </div>
             <div className="info">
-              <div className="infoSec">
+              <div className="infoSec1">
                 <div className="information">
                   <a href="mailto:kadenn2019@gmail.com">
                     KadenN2019@gmail.com
@@ -240,7 +272,7 @@ function App(props) {
                   (702)499-2569
                 </div>
               </div>
-              <div className="infoSec">
+              <div className="infoSec2">
                 <div className="information">
                   <a href="#"  target="_blank" className="icons">
                     <i className="fa fa-linkedin"></i>

@@ -1,4 +1,4 @@
-Html {box-sizing:border-box;   scroll-behavior: smooth;}
+Html {box-sizing:border-box;   scroll-behavior: smooth; background-color: #1b1b1b;}
 *, *::before, *::after {box-sizing:inherit}
 
 .App {
@@ -17,8 +17,8 @@ a{
 }
 
 a:hover{
-  color: lightgray;
-  border-bottom: 2px solid lightgray;
+  color: rgb(137, 168, 180);
+  border-bottom: 2px solid rgb(137, 168, 180);
 }
 
 .Section-T{
@@ -32,8 +32,9 @@ a:hover{
   display: flex;
   justify-content: space-between;
   position:fixed;
+  align-items: center;
   padding: 5px;
-  width:100%;
+  width: 100%;
   height: auto;
   font-size: 23px;
   transition: background-color 300ms, font-size 300ms;
@@ -66,6 +67,7 @@ a:hover{
   /* background-color: #313131; */
   background-image: url('./assets/DSC09782.jpg');
   min-height: 100vh;
+  min-width: 100vh;
   background-size: cover;
   /* background-position-y: -50px; */
   background-repeat: no-repeat;
@@ -100,13 +102,15 @@ a:hover{
   background-color: #1b1b1b;
   /* background-color: #000; */
   min-height: 100vh;
+  min-width: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(15px + 2vmin);
+  font-size: 33px;
   color: white;
   margin: auto;
+  padding: 15px 0px 15px;
 }
 
 .AboutSec{
@@ -131,7 +135,7 @@ a:hover{
 .largeDes{
   font-family: 'Montserrat', sans-serif;
   text-align: start;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .AboutImg{
@@ -153,13 +157,15 @@ a:hover{
   background-image: url('./assets/DSC05824.jpg');
   background-size: cover;
   /* background-position-y: -50px; */
-  min-height: 100vh;
+  min-height: 90vh;
+  min-width: 100vh;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(15px + 2vmin);
+  margin: auto;
+  font-size: 33px;
   color: white;
 }
 .Skill{
@@ -219,7 +225,7 @@ a:hover{
   justify-content: center;
   font-size: 33px;
   color: white;
-  padding: 15px 0px 15px;
+  padding: 15px 0px;
 }
 
 .ProjectINDV{
@@ -248,14 +254,26 @@ a:hover{
 }
 
 .projDetails{
-  font-size: 20px;
+  font-size: 23px;
   text-align: left;
+  margin: 5px 0px 5px;
+}
+
+.projCode{
+  font-size: 17px;
+  display: flex;
+}
+
+.specCode{
+  margin: 0px 10px 5px 0px;
+  border-bottom: white 1px solid;
 }
 
 /* Contact */
 #Contact {
   background-color: #1b1b1b;
-  height: 150px;
+  height: auto;
+  min-width: 100vh;
   font-size: 33px;
   color: white;
   display: flex;
@@ -271,16 +289,23 @@ a:hover{
   align-items: center;
 }
 
-.infoSec{
+.infoSec1{
   display: flex;
   flex-direction: row;
-  font-size: 23px;
+  font-size: 20px;
+}
+
+.infoSec2{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
 }
 
 .information{
   margin: 10px;
   font-family: 'Montserrat', sans-serif;
 }
+
 @media screen and (max-width: 1121px) {
   .Skill{
     flex-direction: column;
@@ -289,6 +314,39 @@ a:hover{
     border: none;
     border-bottom: 2px solid white;
     margin-bottom: 20px;
+    padding: 0px 5px;
+  }
+  .SkillSet2{
+    padding: 0px 5px;
+  }
+}
+@media screen and (max-width: 529px) {
+  .Skill{
+    flex-direction: column;
+  }
+  .SkillSet1{
+    border: none;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+    /* padding: 0px 5px; */
+  }
+  .Code{
+    font-size: 23px;
+  }
+  .skillRight{
+    width: 200px;
+  }
+  .classLeft{
+    width: 200px;
+  }
+  .design{
+    font-size: 23px;
+  }
+  .SkillSet2{
+    padding: 0px 5px;
+  }
+  .title{
+    font-size: 23px;
   }
 }
 
@@ -296,5 +354,155 @@ a:hover{
 @media screen and (max-width: 960px) {
   .ProjectINDV{
     flex-direction: column;
+    padding: 15px 0px;
+  }
+  .ProjDESC{
+    align-items: center;
+    width: 78%;
+  }
+  .projDetails{
+    text-align: center;
+  }
+  .ProjIMG{
+    margin-bottom: 8px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 496px){
+  .ProjectINDV{
+    flex-direction: column;
+    padding: 0px;
+    margin: 8px 0px 0px;
+  }
+  .ProjDESC{
+    align-items: center;
+    /* width: 68%; */
+  }
+  .projDetails{
+    text-align: center;
+  }
+  .ProjIMG{
+    margin-bottom: 8px;
+    /* width: 70%; */
+  }
+  #Projects{
+    padding: 5px 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .infoSec1{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+}
+
+
+
+/* PHONES */
+@media screen and (max-width: 414px){
+  .Section-T{
+    font-size: 45px;
+  }
+  #Home{
+    min-height: 178vh;
+  }
+  .LOGO{
+    height: 90vh;
+  }
+  .JobTitle{
+    font-size: 28px;
+  }
+  .icons{
+    font-size: 40px;
+  }
+  /* Header */
+  .header{
+    font-size: 33px;
+  }
+  .BlackSize{
+    font-size: 30px;
+  }
+  /* About */
+  #About{
+    height: 145vh;
+    padding: 0px;
+  }
+  .AboutSec{
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
+  .quickDes{
+    text-align: center;
+    font-size: 30px;
+  }
+  .largeDes{
+    text-align: center;
+    font-size: 28px;
+  }
+  .AboutLeft{
+    align-items: center;
+    width: 80%;
+  }
+  .AboutImg{
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .Line{
+    width: 200px;
+  }
+  /* Skills */
+  #Skills{
+    height: 168vh;
+    background-position-x: -800px;
+  }
+  .SkillSet1{
+    height:50vh;
+    margin-bottom: 60px;
+  }
+  .SkillSet2{
+    height: 50vh;
+  }
+  .title{
+    font-size: 35px
+  }
+  .Code{
+    font-size: 35px;
+    /* padding: 0px 20px; */
+  }
+  .design{
+    font-size: 35px;
+  }
+  .classLeft{
+    width:300px;
+  }
+  .skillRight{
+    width: 300px;
+  }
+
+
+  /* Projects */
+  #Projects{
+    font-size: 45px;
+  }
+  .ProjTitle{
+    font-size: 35px;
+  }
+  .projDetails{
+    font-size: 30px;
+  }
+  .projCode{
+    font-size: 23px;
+  }
+  .ProjectINDV{
+    padding: 15px 0px 5px
+  }
+  #Contact{
+    font-size: 45px;
+  }
+  .infoSec1{
+    font-size: 28px;
   }
 }
