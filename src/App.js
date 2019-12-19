@@ -92,7 +92,7 @@ function App(props) {
               </div>
               <div className="Line"></div>
               <div className="largeDes">
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+                I am a frontend developer with a background in design. Starting in graphic design and transferring over to engineering makes it so I can bridge the gap between design and development. This has led me to aspire to build functional and efficient coded sites while also giving the best user experience. When I am not coding, I am most likely driving my favorite backroads or taking pictures.
               </div>
             </div>
           
@@ -185,7 +185,9 @@ function App(props) {
           <div>
             <div className="ProjectINDV">
               <img src={MintShoes} className="ProjIMG" />
-
+              <div className="toggle">
+                (Desktop Only)
+              </div>
               <div className="ProjDESC">
                 <div className="ProjTitle">
                   Mint Shoes
@@ -224,6 +226,9 @@ function App(props) {
               {/* <a  href="http://viewbar.surge.sh/"> */}
                 <img src={TheViewBar} className="ProjIMG" />
               {/* </a> */}
+              <div className="toggle">
+                (Desktop Only)
+              </div>
               <div className="ProjDESC">
                 <div  className="ProjTitle">
                   The View Bar
