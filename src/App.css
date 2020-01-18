@@ -440,7 +440,7 @@ Html {box-sizing:border-box;   scroll-behavior: smooth; background-color: #1b1b1
   }
   /* About */
   #About{
-    height: 145vh;
+    height: 160vh;
     padding: 0px;
   }
   .AboutSec{

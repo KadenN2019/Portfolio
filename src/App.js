@@ -5,8 +5,6 @@ import "font-awesome/css/font-awesome.min.css"
 import MintShoes from "./assets/MintShoes.jpg"
 import TheViewBar from "./assets/TheViewBar.jpg"
 
-import { Link } from "react-router-dom"
-
 function App(props) {
 
   const [headerClass, setHeaderClass] = useState('')
@@ -227,10 +225,9 @@ function App(props) {
 
           <div>
             <div className="ProjectINDV">
-              <a className="aClass" href="/TheViewBar" target="_blank">
+              <a className="aClass" href="http://viewbar.surge.sh/" target="_blank">
                 <img src={TheViewBar} className="ProjIMG"/>
               </a>
-              
               <div className="toggle">
                 (Desktop Only)
               </div>
