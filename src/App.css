@@ -9,14 +9,14 @@ Html {box-sizing:border-box;   scroll-behavior: smooth; background-color: #1b1b1
   /* font-family: 'Montserrat', sans-serif; */
 }
 
-a{
+#link{
   color: white;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: color 500ms, border 500ms;
 }
 
-a:hover{
+#link:hover{
   color: rgb(137, 168, 180);
   border-bottom: 2px solid rgb(137, 168, 180);
 }
@@ -169,6 +169,7 @@ a:hover{
   font-size: 33px;
   color: white;
 }
+
 .Skill{
   display: flex;
 }
@@ -241,9 +242,12 @@ a:hover{
 }
 
 .ProjIMG{
-  width: 40%;
+  width: 100%;
   box-shadow: 6px 6px 5px #111;
-  cursor: pointer;
+}
+
+.aClass{
+  width: 40%;
 }
 
 .ProjDESC{
@@ -312,6 +316,10 @@ a:hover{
 }
 
 @media screen and (max-width: 1121px) {
+  .ProjectINDV{
+    flex-direction: column;
+    padding: 15px 0px;
+  }
   .Skill{
     flex-direction: column;
   }

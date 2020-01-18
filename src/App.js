@@ -5,6 +5,8 @@ import "font-awesome/css/font-awesome.min.css"
 import MintShoes from "./assets/MintShoes.jpg"
 import TheViewBar from "./assets/TheViewBar.jpg"
 
+import { Link } from "react-router-dom"
+
 function App(props) {
 
   const [headerClass, setHeaderClass] = useState('')
@@ -29,31 +31,31 @@ function App(props) {
       <header className="App-header">
         <div className={"header " + headerClass}>
           <div className="LeftSide">
-            <a href="#">Kaden Neuman</a>
+            <a id="link" href="#">Kaden Neuman</a>
           </div>
           <div className="RightSide">
             <div className="rightSingle">
-              <a href="#Home">
+              <a id="link" href="#Home">
                 Home
               </a>
             </div>
             <div className="rightSingle">
-              <a href="#About">
+              <a id="link" href="#About">
                 About
               </a>
             </div>
             <div className="rightSingle">
-              <a href="#Skills">
+              <a id="link" href="#Skills">
                 Skills
               </a>
             </div>
             <div className="rightSingle">
-              <a href="#Projects">
+              <a id="link" href="#Projects">
                 Projects
               </a>
             </div>
             <div className="rightSingle">
-              <a href="#Contact">
+              <a id="link" href="#Contact">
                 Contact
               </a>
             </div>
@@ -69,12 +71,12 @@ function App(props) {
           </div>
           <div className="icons">
             <div className="icon">
-              <a href="#"  target="_blank">
+              <a id="link" href="#"  target="_blank">
                 <i className="fa fa-linkedin"></i>
               </a>
             </div>
             <div className="icon">
-              <a href="https://github.com/KadenN2019" target="_blank">
+              <a id="link" href="https://github.com/KadenN2019" target="_blank">
                 <i className="fa fa-github"></i>
               </a>
             </div>
@@ -184,7 +186,9 @@ function App(props) {
           Projects.
           <div>
             <div className="ProjectINDV">
-              <img src={MintShoes} className="ProjIMG" />
+              <a className="aClass" href="#" target='_blank' >
+                <img src={MintShoes} className='ProjIMG' />
+              </a>
               <div className="toggle">
                 (Desktop Only)
               </div>
@@ -213,7 +217,7 @@ function App(props) {
                   </div>
                 </div>
                 <div>
-                  <a href="https://github.com/jkhone/sports-site-dude" target="_blank" className="icons">
+                  <a id="link" href="https://github.com/jkhone/sports-site-dude" target="_blank" className="icons">
                     <i className="fa fa-github"></i>
                   </a>
                 </div>
@@ -223,9 +227,10 @@ function App(props) {
 
           <div>
             <div className="ProjectINDV">
-              {/* <a  href="http://viewbar.surge.sh/"> */}
-                <img src={TheViewBar} className="ProjIMG" />
-              {/* </a> */}
+              <a className="aClass" href="/TheViewBar" target="_blank">
+                <img src={TheViewBar} className="ProjIMG"/>
+              </a>
+              
               <div className="toggle">
                 (Desktop Only)
               </div>
@@ -251,7 +256,7 @@ function App(props) {
                   </div>
                 </div>
                 <div>
-                  <a href="https://github.com/KadenN2019/TheViewBar" target="_blank" className="icons">
+                  <a id="link" href="https://github.com/KadenN2019/TheViewBar" target="_blank" className="icons">
                     <i className="fa fa-github"></i>
                   </a>
                 </div>
@@ -269,7 +274,7 @@ function App(props) {
             <div className="info">
               <div className="infoSec1">
                 <div className="information">
-                  <a href="mailto:kadenn2019@gmail.com">
+                  <a id="link" href="mailto:kadenn2019@gmail.com">
                     KadenN2019@gmail.com
                   </a>
                 </div>
@@ -279,12 +284,12 @@ function App(props) {
               </div>
               <div className="infoSec2">
                 <div className="information">
-                  <a href="#"  target="_blank" className="icons">
+                  <a id="link" href="#"  target="_blank" className="icons">
                     <i className="fa fa-linkedin"></i>
                   </a>
                 </div>
                 <div className="information">
-                  <a href="https://github.com/KadenN2019" target="_blank" className="icons">
+                  <a id="link" href="https://github.com/KadenN2019" target="_blank" className="icons">
                     <i className="fa fa-github"></i>
                   </a>
                 </div>
