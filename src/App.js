@@ -225,7 +225,7 @@ function App(props) {
 
           <div>
             <div className="ProjectINDV">
-              <a className="aClass" href="http://viewbar.surge.sh/" target="_blank">
+              <a className="aClass" href="kadenneuman.com/TheViewBar" target="_blank">
                 <img src={TheViewBar} className="ProjIMG"/>
               </a>
               <div className="toggle">
