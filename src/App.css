@@ -85,7 +85,7 @@ Html {box-sizing:border-box;   scroll-behavior: smooth; background-color: #1b1b1
 }
 
 .JobTitle{
-  font-size: 17px;
+  font-size: 19px;
 }
 
 .icons{
@@ -320,6 +320,16 @@ Html {box-sizing:border-box;   scroll-behavior: smooth; background-color: #1b1b1
     flex-direction: column;
     padding: 15px 0px;
   }
+  .projDetails{
+    text-align: center;
+  }
+  .ProjDESC{
+    align-items: center;
+    width: 78%;
+  }
+  .aClass{
+    width: 80%;
+  }
   .Skill{
     flex-direction: column;
   }
@@ -378,7 +388,7 @@ Html {box-sizing:border-box;   scroll-behavior: smooth; background-color: #1b1b1
   }
   .ProjIMG{
     margin-bottom: 8px;
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -397,7 +407,7 @@ Html {box-sizing:border-box;   scroll-behavior: smooth; background-color: #1b1b1
   }
   .ProjIMG{
     margin-bottom: 8px;
-    /* width: 70%; */
+    width: 100%;
   }
   #Projects{
     padding: 5px 0px;

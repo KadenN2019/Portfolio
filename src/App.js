@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import logo from './assets/NeumanKlogo.png'
 import "font-awesome/css/font-awesome.min.css"
+import Neust from "./assets/Neust.jpg"
 import MintShoes from "./assets/MintShoes.jpg"
 import TheViewBar from "./assets/TheViewBar.jpg"
 
@@ -92,7 +93,7 @@ function App(props) {
               </div>
               <div className="Line"></div>
               <div className="largeDes">
-                I am a frontend developer with a background in design. Starting in graphic design and transferring over to engineering makes it so I can bridge the gap between design and development. This has led me to aspire to build functional and efficient coded sites while also giving the best user experience. When I am not coding, I am most likely driving my favorite backroads or taking pictures.
+                Starting in graphic design and transferring over to engineering makes it so I can bridge the gap between design and development. This has led me to aspire to build functional and efficient coded sites while also giving the best user experience. When I am not coding, I am most likely driving my favorite backroads or taking pictures.
               </div>
             </div>
           
@@ -182,11 +183,44 @@ function App(props) {
 {/* Projects */}
         <div id="Projects">
           Projects.
+
           <div>
             <div className="ProjectINDV">
-              <a className="aClass" href="#" target='_blank' >
-                <img src={MintShoes} className='ProjIMG' />
+              <a href="/neust"  target="_blank" className="aClass">
+                <img src={Neust} className='ProjIMG' />
               </a>
+              <div className="ProjDESC">
+                <div className="ProjTitle">
+                  Neust
+                </div>
+                <div className="projDetails">
+                  The Neust website is a photography portfolio to showcase my favorite hobby and what I do in my free time. The site allowed me to apply my programming style with some of my favorite shots over various types of photography. I am especially proud of the resizing features of the images, as well as making the site available via all devices. Take a peek at how the images adjust to your desktop, tablet, and phone using a fully custom responsive design.
+                </div>
+                <div className="projCode">
+                  <div className="specCode">
+                    React
+                  </div>
+                  <div className="specCode">
+                    Javascript
+                  </div>
+                  <div className="specCode">
+                    CSS
+                  </div>
+                </div>
+                <div>
+                  <a id="link" href="https://github.com/KadenN2019/neust-web" target="_blank" className="icons">
+                    <i className="fa fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="ProjectINDV">
+              <div className="aClass">
+                <img src={MintShoes} className='ProjIMG' />
+              </div>
               <div className="toggle">
                 (Desktop Only)
               </div>
